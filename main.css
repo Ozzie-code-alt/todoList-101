@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    outline: red dotted 1px;
+    /* outline: red dotted 1px; */
     font-family:sans-serif;
 }
 
@@ -10,10 +10,11 @@ body{
 }
 
 .main-container{
-display: flex;
+display: grid;
 align-items: center;
 justify-content: center;
-height: 100vh;
+min-height: 100vh;
+
 }
 
 .main-container .to-do-container{
@@ -44,13 +45,74 @@ border-radius: 15px;
 border-style: double;
 padding-left: 3px;
 }
-.main-container .to-do-container .txtbox-btn-container .btn-container input{
-border:  none;
-border-radius: 15px;
-font-size: small;
-padding: 7px;
-margin-left: 10px;
-font-weight: bold;
-background-color: #b896a9;
-cursor: pointer;
+.btn-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0;
 }
+
+.btn-container input{
+    border: none;
+    border-radius: 15px;
+    font-size: small;
+    padding: 7px;
+    margin-left: 10px;
+    font-weight: bold;
+    background-color: #b896a9;
+    cursor: pointer;
+    border-style: solid;
+
+}
+
+.task-container{
+margin-bottom: 500px;
+display: grid;
+background-color: #7A5F41;
+height: 10rem;
+transition: height 2s ease-in-out;
+width: 20rem;
+border-radius: 15px;
+border-style: double;
+border-color: black;
+align-items: center;
+justify-content: center;
+
+}
+
+.task-container .tasks-input{
+    border-style: dotted;
+    border-radius: 15px;
+    display: flex;
+    width: 17rem;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.task-container .tasks-input button{
+    border-radius: 15px;
+    border-style: none;
+    background-color: #b896a9;
+    font-weight: bold;
+    padding: 2px;
+    font-size: small;
+    cursor: pointer;
+}
+
+
+/* @keyframes zoomIn {
+    0%{
+        transform: translate(0,0);
+    }
+    100%{
+        transform: translate(100px,50px);
+    }
+}
+
+.zoom-In{
+    animation-name: zoomIn;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+} */
