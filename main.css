@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: red dotted 1px;
+    font-family:sans-serif;
+}
+
+body{
+background-color: gray;
+}
+
+.main-container{
+display: flex;
+align-items: center;
+justify-content: center;
+height: 100vh;
+}
+
+.main-container .to-do-container .title-container{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    
+}
+.main-container .to-do-container .txtbox-btn-container  {
+    display: flex;
+   margin: auto;
+}
