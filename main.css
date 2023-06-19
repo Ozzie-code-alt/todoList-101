@@ -19,6 +19,7 @@ min-height: 100vh;
 }
 
 .main-container .to-do-container{
+margin-top: 1rem;
 display: grid;
 background-color: #7A5F41;
 height: 10rem;
